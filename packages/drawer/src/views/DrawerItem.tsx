@@ -64,6 +64,7 @@ type Props = {
 export default function DrawerItem({
   icon,
   label,
+  labelStyle,
   focused = false,
   activeTintColor = '#6200ee',
   inactiveTintColor = 'rgba(0, 0, 0, .68)',
@@ -112,6 +113,7 @@ export default function DrawerItem({
                   marginLeft: iconNode ? 32 : 0,
                   marginVertical: 5,
                 },
+                labelStyle,
               ]}
             >
               {label}
